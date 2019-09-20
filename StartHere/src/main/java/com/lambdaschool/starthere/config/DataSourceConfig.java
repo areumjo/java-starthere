@@ -65,9 +65,10 @@ public class DataSourceConfig
             myDriverClass = "org.postgresql.Driver";
             myDBUser = System.getenv("MYDBUSER");
             myDBPassword = System.getenv("MYDBPASSWORD");
-        } else
+        } // else if {} if you want to connect new database
+        else
         {
-            // Assumes H2
+            // Assumes H2 -- default is H2 db unless you have POSTGRESQL
             myUrlString = "jdbc:h2:mem:testdb";
             myDriverClass = "org.h2.Driver";
             myDBUser = "sa";

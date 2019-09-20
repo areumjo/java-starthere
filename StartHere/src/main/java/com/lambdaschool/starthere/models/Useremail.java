@@ -17,6 +17,7 @@ public class Useremail extends Auditable
     @Email
     private String useremail;
 
+    // (one) user can have (many) emails // we can setup one-many relationship as much as you want
     @ManyToOne
     @JoinColumn(name = "userid",
                 nullable = false)

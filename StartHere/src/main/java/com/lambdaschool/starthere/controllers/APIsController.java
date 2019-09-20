@@ -45,6 +45,7 @@ public class APIsController
         };
         ResponseEntity<Map<String, APIOpenLibrary>> responseEntity = restTemplate.exchange(requestURL, HttpMethod.GET, null, responseType);
 
+        // hashmap
         Map<String, APIOpenLibrary> ourBooks = responseEntity.getBody();
 
         // goodreads

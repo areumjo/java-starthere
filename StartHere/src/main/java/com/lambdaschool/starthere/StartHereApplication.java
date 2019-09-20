@@ -19,6 +19,7 @@ public class StartHereApplication
     private static final Logger logger = LoggerFactory.getLogger(StartHereApplication.class);
     private static boolean stop = false;
 
+    // checking if all env-variables exist
     @Autowired
     private static Environment env;
 
